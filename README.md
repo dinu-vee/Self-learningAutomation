@@ -1,9 +1,21 @@
 # Hello there, 👋👋
 
-Thank you very much for cheking my code..
+**General info**
+Thank you very much for cheking my code.. 🌱 I am working as a manual tester and self-learning test automation.
 
-🌱 I am working as a manual tester and really like to learn test automation. Im self learning JavaScript/Cypress.io for few months.
+**Technologies**
+Website URL using to automate: https://opensource-demo.orangehrmlive.com/
+Code eidtor: Visual Studio Code
+Framework: Cypress.io (Cypress tests are only written in JavaScript)
+  Packages: Separate folders for Pages and Tests
+  Properties file: 
+Operating System: Windows 
 
-Website url: https://opensource-demo.orangehrmlive.com/
-Framework: Cypress.io
+**Setup**
+To run this project, install it locally using npm
+$ cd ..\orangehrm_v1\OranageHRM-TestAutomation>
+$ npm install
+$ npx cypress open
+
+
 
