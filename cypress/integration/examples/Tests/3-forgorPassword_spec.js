@@ -14,13 +14,13 @@ describe('orange hrm forgot password page',function(){
     })
 
     it('forgpt password link',function(){
-        forgotpwd.forgotPwLink().click();
-        forgotpwd.forgotPwHeader();
-        forgotpwd.forgotPwSubheader();
-        forgotpwd.forgotPwLabel();
-        forgotpwd.enterForgotPwUsername(this.data.Username);
-        forgotpwd.clickResetPasswordBtn().click();
-        forgotpwd.resetPwdMessage();
+        forgotpwd.clickForgotPasswordLink();
+        forgotpwd.getForgotPasswordHeader();
+        forgotpwd.getForgotPasswordSubHeader();
+        forgotpwd.getUsernameLable();
+        forgotpwd.enterForgotPasswordUsername(this.data.Username);
+        forgotpwd.clickResetPasswordButton();
+        forgotpwd.getResetPassworddMessage();
     })
 })
 

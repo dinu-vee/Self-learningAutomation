@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 class LoginPage{
 
-// Create variables for element locators
+// Creating variables for element locators
    urlPath = Cypress.env('baseUrl');
    usernameInput = 'input[id="txtUsername"]';
    passwordInput = 'input[id="txtPassword"]';
@@ -48,7 +48,18 @@ class LoginPage{
      invalidPasswordError(){
         return cy.get(this.invalidPasswordErrorLable).should('have.text','Invalid credentials');
      }
-
+     loginPanelTitel(){
+      return cy.get(this.loginPanelLable).should('have.text','LOGIN Panel');
+     }
+     usernamePlaceholerText(){
+      return cy.get(this.usernamePlaceholerTextLable).should('have.text','Username');
+     }
+     passwordPlaceholderText(){
+      return cy.get(this.passwordPlaceholderTextLable).should('have.text','Password');
+     }
+     loginButtonTxt(){
+      return cy.get(this.loginButtonTxtLable).should('have.attr','value','LOGIN');
+     }
      welcomeFirstnameHomescreen(){
       // Get the text on the welcome msg panel
       cy.get(this.welcomeFirstnameHomescreenLable).then(($el)=>{
@@ -60,19 +71,5 @@ class LoginPage{
              }) 
          })
      }
-
-      loginPanelTitel(){
-         return cy.get(this.loginPanelLable).should('have.text','LOGIN Panel');
-      }
-      usernamePlaceholerText(){
-         return cy.get(this.usernamePlaceholerTextLable).should('have.text','Username');
-      }
-      passwordPlaceholderText(){
-         return cy.get(this.passwordPlaceholderTextLable).should('have.text','Password');
-      }
-      loginButtonTxt(){
-         return cy.get(this.loginButtonTxtLable).should('have.attr','value','LOGIN');
-      }
-
 }
 export default LoginPage 
