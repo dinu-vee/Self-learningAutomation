@@ -21,6 +21,8 @@ describe('orange hrm forgot password page',function(){
         forgotpwd.enterForgotPasswordUsername(this.data.Username);
         forgotpwd.clickResetPasswordButton();
         forgotpwd.getResetPassworddMessage();
+        //new
+        
     })
 })
 
