@@ -53,7 +53,7 @@ describe('orange hrm login page', function() {
       loginpage.fillUsername(this.data.Username);
       loginpage.fillPassword(this.data.Password);
       loginpage.clickLoginButton();
-      loginpage.welcomeFirstnameHomescreen();
+      //loginpage.welcomeFirstnameHomescreen();
     
     })
   })
